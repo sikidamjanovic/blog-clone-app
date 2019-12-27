@@ -19,8 +19,8 @@ const Feed = props => {
 }
 
 const Container = styled.div`
-    column-count: 3;
-    column-gap: 2em;
+    display: flex;
+    flex-wrap: wrap;
     max-width: 1280px;
 `
 

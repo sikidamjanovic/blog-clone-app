@@ -39,10 +39,19 @@ const Container = styled.div`
         cursor: pointer;
         border: none;
     }
+    @media (max-width: 600px) {
+        width: 95%;
+        margin: 2.5%;
+    }
+    @media (min-width: 600px) {
+        width: 48%;
+        margin: 1%;
+    }
+    @media (min-width: 768px) {
+        width: 31%;
+        margin: 1%;
+    }
     transition: 0.5s;
-    display: inline-block;
-    margin: 0 0 1.5em;
-    width: 100%;
     background-color: #FFFFFF;
 `
 
@@ -52,7 +61,7 @@ const Light = styled.div`
 `
 
 const Dark = styled.div`
-    background-color: #303030;
+    background-color: #181c1b;
     height: 100%;
 `
 
@@ -70,6 +79,7 @@ const Img = styled.img`
 const Title = styled.h1`
     font-family: 'PT Sans', sans-serif;
     font-size: 1.5em;
+    opacity: 0.8;
     padding-left: 5%;
     padding-right: 5%;  
     letter-spacing: 0.05em;
