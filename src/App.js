@@ -33,6 +33,7 @@ const App = props => {
     const filterByID = (e) => {
         e.preventDefault()
         setIdFilter(e.target.value)
+        setLimit(0)
         let url = 'https://jsonplaceholder.typicode.com/photos?id=' + e.target.value
         axios.get(url).then(res => {
             setData(res.data)
@@ -42,6 +43,7 @@ const App = props => {
     const filterByTitle = (e) => {
         e.preventDefault()
         setTitleFilter(e.target.value)
+        setLimit(0)
         let url = 'https://jsonplaceholder.typicode.com/photos?title=' + e.target.value
         axios.get(url).then(res => {
             setData(res.data)
